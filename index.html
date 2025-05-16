@@ -1,265 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nusa Rasa - Resep Trending</title>
-    <!-- Ganti link ini dengan Google Fonts League Spartan -->
-    <link
-      href="https://fonts.googleapis.com/css?family=League+Spartan:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body {
-        font-family: "League Spartan", sans-serif;
-      }
-    </style>
-  </head>
-  <link rel="stylesheet" href="styles.css" />
 
-  <body class="bg-white min-h-screen flex">
-    <!-- Sidebar -->
-    <aside
-      class="w-64 bg-gradient-to-b from-orange-500 to-orange-600 text-white p-6 space-y-6"
-    >
-      <h1 class="text-3xl font-bold">NusaRasa</h1>
-      <div class="relative">
-        <div class="relative w-full">
-          <img
-            src="asset/icons/search-normal.png"
-            alt="Search Icon"
-            class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5"
-          />
-          <input
-            type="text"
-            placeholder="Search"
-            class="w-full pl-10 pr-4 py-2 rounded-full text-black"
-          />
-        </div
-        
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nusa Rasa - Resep Trending</title>
+  <!-- Ganti link ini dengan Google Fonts League Spartan -->
+  <link href="https://fonts.googleapis.com/css?family=League+Spartan:400,700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: "League Spartan", sans-serif;
+    }
+  </style>
+</head>
+<link rel="stylesheet" href="styles.css" />
+
+<body class="bg-white min-h-screen flex">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-gradient-to-b from-orange-500 to-orange-600 text-white p-6 space-y-6">
+    <h1 class="text-3xl font-bold">NusaRasa</h1>
+    <div class="relative">
+      <div class="relative w-full">
+        <img src="asset/icons/search-normal.png" alt="Search Icon"
+          class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5" />
+        <input type="text" placeholder="Search" class="w-full pl-10 pr-4 py-2 rounded-full text-black" />
       </div>
       <nav class="space-y-4">
-        <a
-          href="#"
-          class="flex items-center gap-2 font-semibold text-orange-100 bg-white bg-opacity-20 p-2 rounded-lg"
-        >
+        <a href="#" class="flex items-center gap-2 font-semibold text-orange-100 bg-white bg-opacity-20 p-2 rounded-lg"
+          style="text-decoration: none;">
           <img src="asset/icons/home.png" alt="Beranda Icon" class="w-5 h-5" />
           Beranda
         </a>
-        <a href="#" class="flex items-center gap-2 hover:underline">
-          <img
-            src="asset/icons/explore.png"
-            alt="Jelajahi Icon"
-            class="w-5 h-5"
-          />
+        <a href="#" class="flex items-center gap-2 hover:underline" style="text-decoration: none;">
+          <img src="asset/icons/explore.png" alt="Jelajahi Icon" class="w-5 h-5" />
           Jelajahi
         </a>
-        <a href="#" class="flex items-center gap-2 hover:underline">
+        <a href="#" class="flex items-center gap-2 hover:underline" style="text-decoration: none;">
           <img src="asset/icons/upload.png" alt="Unggah Icon" class="w-5 h-5" />
           Unggah
         </a>
-        <a href="#" class="flex items-center gap-2 hover:underline">
-          <img
-            src="asset/icons/notification.png"
-            alt="Notifikasi Icon"
-            class="w-5 h-5"
-          />
+        <a href="#" class="flex items-center gap-2 hover:underline" style="text-decoration: none;">
+          <img src="asset/icons/notification.png" alt="Notifikasi Icon" class="w-5 h-5" />
           Notifikasi
         </a>
-        <a href="#" class="flex items-center gap-2 hover:underline">
-          <img
-            src="asset/icons/bookmark.png"
-            alt="Penanda Icon"
-            class="w-5 h-5"
-          />
+        <a href="#" class="flex items-center gap-2 hover:underline" style="text-decoration: none;">
+          <img src="asset/icons/bookmark.png" alt="Penanda Icon" class="w-5 h-5" />
           Penanda
         </a>
-        <a href="#" class="flex items-center gap-2 hover:underline">
-          <img
-            src="asset/icons/settings.png"
-            alt="Pengaturan Icon"
-            class="w-5 h-5"
-          />
+        <a href="#" class="flex items-center gap-2 hover:underline" style="text-decoration: none;">
+          <img src="asset/icons/settings.png" alt="Pengaturan Icon" class="w-5 h-5" />
           Pengaturan
         </a>
       </nav>
-    </aside>
+  </aside>
 
-    <!-- Main Content -->
-    <main class="flex-1 bg-gray-50 p-8">
-      <div class="flex justify-between items-center mb-6">
-        <h2 class="text-2xl font-bold">
-          Resep Trending <span class="text-xl">🔥</span>
-        </h2>
-        <div class="flex items-center gap-2">
-          <p>Azka Faiq</p>
+  <!-- Main Content -->
+  <main class="flex-1 bg-gray-50 p-8">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-2xl font-bold">
+        Resep Trending <span class="text-xl">🔥</span>
+      </h2>
+      <div class="flex items-center gap-2">
+        <p>Azka Faiq</p>
+        <img src="asset\profile.jpg" class="w-10 h-10 rounded-full" alt="avatar" />
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <div class="relative">
           <img
-            src="D:\PRoject\frontednusa\asset\profile.jpg"
-            class="w-10 h-10 rounded-full"
-            alt="avatar"
-          />
-        </div>
-      </div>
-
-      <div class="grid grid-cols-2 gap-6">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <div class="relative">
-            <img
-              src="D:\PRoject\frontednusa\asset\Makanan\makanan1.jpg"
-              alt="Soto"
-              class="w-full h-48 object-cover"
-            />
-            <div
-              class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full"
-            >
-              ⭐ 4.5
-            </div>
-            <div
-              class="absolute top-2 right-2 bg-white text-black p-1 rounded-full"
-            >
-              📄
-            </div>
-            <div class="absolute inset-0 flex justify-center items-center">
-              
-  <div
-    class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center"
-  >
-    <!-- replace the path below with your own icon -->
-    <img src="/icons/play.svg" alt="Play icon" class="w-6 h-6" />
-  </div>
-</div>
-
+            src="https://i.ytimg.com/vi/NfiaUcneRM4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB"
+            alt="Soto" class="w-full h-48 object-cover" />
+          <div class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full">
+            ⭐ 4.5
           </div>
-          <div class="p-4">
+          <div class="absolute top-2 right-2 bg-white text-black p-1 rounded-full">
+            📄
+          </div>
+          <div class="absolute inset-0 flex justify-center items-center">
+
+            <div class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center">
+              <!-- replace the path below with your own icon -->
+              <a href="https://youtu.be/NfiaUcneRM4?si=OF-WdLvJFmTpV2pr" target="_blank">
+                <img src="asset/icons/play-icon.png" alt="Play icon" class="w-6 h-6" />
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="p-4">
+          <a href="https://youtu.be/NfiaUcneRM4?si=OF-WdLvJFmTpV2pr" target="_blank">
             <h3 class="font-semibold">Resep Membuat Soto Ayam</h3>
-            <div class="flex items-center gap-2 mt-2">
-              <img
-                src="D:\PRoject\frontednusa\asset\tinashe.jpg"
-                class="w-6 h-6 rounded-full"
-              />
-              <span class="text-sm">Tinashe</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <div class="relative">
-            <img
-              src="D:\PRoject\frontednusa\asset\Makanan\makanan1.jpg"
-              alt="Bebek"
-              class="w-full h-48 object-cover"
-            />
-            <div
-              class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full"
-            >
-              ⭐ 4.5
-            </div>
-            <div
-              class="absolute top-2 right-2 bg-white text-black p-1 rounded-full"
-            >
-              📄
-            </div>
-            <div class="absolute inset-0 flex justify-center items-center">
-              <div
-                class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl"
-              >
-                ▶
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold">
-              Resep Bebek Goreng HJ. Slamet Anti Gagal
-            </h3>
-            <div class="flex items-center gap-2 mt-2">
-              <img
-                src="D:\PRoject\frontednusa\asset\maskepin.jpg"
-                class="w-6 h-6 rounded-full"
-              />
-              <span class="text-sm">Mas Kepin</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <div class="relative">
-            <img
-              src="D:\PRoject\frontednusa\asset\Makanan\makanan1.jpg"
-              alt="Es Buah"
-              class="w-full h-48 object-cover"
-            />
-            <div
-              class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full"
-            >
-              ⭐ 4.5
-            </div>
-            <div
-              class="absolute top-2 right-2 bg-white text-black p-1 rounded-full"
-            >
-              📄
-            </div>
-            <div class="absolute inset-0 flex justify-center items-center">
-              <div
-                class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl"
-              >
-                ▶
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold">Cara memasak prabowo buatan rakyat</h3>
-            <div class="flex items-center gap-2 mt-2">
-              <img
-                src="D:\PRoject\frontednusa\asset\kuncoro.jpg"
-                class="w-6 h-6 rounded-full"
-              />
-              <span class="text-sm">kuncoro</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <div class="relative">
-            <img
-              src="D:\PRoject\frontednusa\asset\Makanan\makanan1.jpg"
-              alt="Semur"
-              class="w-full h-48 object-cover"
-            />
-            <div
-              class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full"
-            >
-              ⭐ 4.5
-            </div>
-            <div
-              class="absolute top-2 right-2 bg-white text-black p-1 rounded-full"
-            >
-              📄
-            </div>
-            <div class="absolute inset-0 flex justify-center items-center">
-              <div
-                class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl"
-              >
-                ▶
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold">Cara memasak prabowo buatan rakyat</h3>
-            <div class="flex items-center gap-2 mt-2">
-              <img
-                src="D:\PRoject\frontednusa\asset\kuncoro.jpg"
-                class="w-6 h-6 rounded-full"
-              />
-              <span class="text-sm">kuncoro</span>
-            </div>
+          </a>
+          <div class="flex items-center gap-2 mt-2">
+            <img src="asset\tinashe.jpg" class="w-6 h-6 rounded-full" />
+            <span class="text-sm">Tinashe</span>
           </div>
         </div>
       </div>
-    </main>
-  </body>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <div class="relative">
+          <img src="asset\Makanan\makanan1.jpg" alt="Bebek" class="w-full h-48 object-cover" />
+          <div class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full">
+            ⭐ 4.5
+          </div>
+          <div class="absolute top-2 right-2 bg-white text-black p-1 rounded-full">
+            📄
+          </div>
+          <div class="absolute inset-0 flex justify-center items-center">
+            <div
+              class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl">
+              ▶
+            </div>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold">
+            Resep Bebek Goreng HJ. Slamet Anti Gagal
+          </h3>
+          <div class="flex items-center gap-2 mt-2">
+            <img src="asset\maskepin.jpg" class="w-6 h-6 rounded-full" />
+            <span class="text-sm">Mas Kepin</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <div class="relative">
+          <img src="asset\Makanan\makanan1.jpg" alt="Es Buah" class="w-full h-48 object-cover" />
+          <div class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full">
+            ⭐ 4.5
+          </div>
+          <div class="absolute top-2 right-2 bg-white text-black p-1 rounded-full">
+            📄
+          </div>
+          <div class="absolute inset-0 flex justify-center items-center">
+            <div
+              class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl">
+              ▶
+            </div>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold">Cara memasak prabowo buatan rakyat</h3>
+          <div class="flex items-center gap-2 mt-2">
+            <img src="asset\kuncoro.jpg" class="w-6 h-6 rounded-full" />
+            <span class="text-sm">kuncoro</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <div class="relative">
+          <img src="asset\Makanan\makanan1.jpg" alt="Semur" class="w-full h-48 object-cover" />
+          <div class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full">
+            ⭐ 4.5
+          </div>
+          <div class="absolute top-2 right-2 bg-white text-black p-1 rounded-full">
+            📄
+          </div>
+          <div class="absolute inset-0 flex justify-center items-center">
+            <div
+              class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl">
+              ▶
+            </div>
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold">Cara memasak prabowo buatan rakyat</h3>
+          <div class="flex items-center gap-2 mt-2">
+            <img src="asset\kuncoro.jpg" class="w-6 h-6 rounded-full" />
+            <span class="text-sm">kuncoro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
