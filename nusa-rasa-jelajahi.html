@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jelajahi - Nusa Rasa</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'League Spartan', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gradient-to-b from-orange-400 to-orange-600 text-white p-6 flex flex-col">
+            <h1 class="text-2xl font-bold mb-8">Nusa Rasa</h1>
+            <input type="text" placeholder="Search" class="mb-6 p-2 rounded text-black">
+            <nav class="space-y-4">
+                <a href="#" class="flex items-center space-x-2"><span>🏠</span><span>Home</span></a>
+                <a href="#" class="flex items-center bg-white text-orange-600 p-2 rounded space-x-2"><span>🔍</span><span>Jelajahi</span></a>
+                <a href="#" class="flex items-center space-x-2"><span>⤴️</span><span>Upload</span></a>
+                <a href="#" class="flex items-center space-x-2"><span>🔔</span><span>Notifikasi</span></a>
+                <a href="#" class="flex items-center space-x-2"><span>📌</span><span>Penanda</span></a>
+                <a href="#" class="flex items-center space-x-2"><span>⚙️</span><span>Pengaturan</span></a>
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="flex-1 p-8 overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold">Jelajahi Masakan Nusantara</h2>
+                <div class="flex items-center space-x-2">
+                    <span>Azka Faiq</span>
+                    <img src="https://i.pravatar.cc/40?img=5" alt="User Avatar" class="rounded-full w-10 h-10">
+                </div>
+            </div>
+
+            <!-- Kategori Tabs -->
+            <div class="flex flex-wrap gap-2 mb-6">
+                <button class="bg-white text-black px-4 py-2 rounded border">Jawa Tengah</button>
+                <button class="bg-black text-white px-4 py-2 rounded">Jawa Barat</button>
+                <button class="bg-white text-black px-4 py-2 rounded border">DKI Jakarta</button>
+                <button class="bg-white text-black px-4 py-2 rounded border">Sumatera Barat</button>
+            </div>
+
+            <!-- Kategori: Jawa Barat -->
+            <section class="mb-8">
+                <h3 class="text-xl font-semibold mb-4">Kategori: Jawa Barat</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl overflow-hidden shadow">
+                        <img src="https://i.ibb.co/pWqfnVY/karedok.jpg" alt="Karedok">
+                        <div class="p-4">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-semibold">Resep Membuat Karedok Spesial</h4>
+                                <button>❤️</button>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-1">👤 Tinasha</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Kategori: DKI Jakarta -->
+            <section class="mb-8">
+                <h3 class="text-xl font-semibold mb-4">Kategori: DKI Jakarta</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl overflow-hidden shadow">
+                        <img src="https://i.ibb.co/wgHLyN4/soto.jpg" alt="Soto Mie">
+                        <div class="p-4">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-semibold">Resep Rahasia Soto mie Bogor Mas Kepin</h4>
+                                <button>❤️</button>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-1">👤 Mas Kepin</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+
+
+<a href="#" class="my-2 mb-4 flex items-center gap-3 font-semibold text-orange-100 bg-white bg-opacity-20 p-2 rounded-lg"
+style="text-decoration: none;">
+
+<a href="#" class="mb-4 flex items-center gap-3 hover:underline" style="text-decoration: none;">
