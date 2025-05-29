@@ -14,6 +14,20 @@
       body {
         font-family: "League Spartan", sans-serif;
       }
+      .sidebar-mini .sidebar-text {
+        display: none !important;
+      }
+      .sidebar-mini input[type="text"]::placeholder {
+        color: transparent !important;
+      }
+      .sidebar-mini input[type="text"] {
+        padding-left: 0.75rem !important;
+      }
+      .sidebar-mini #sidebarLogo {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
     </style>
   </head>
   <link rel="stylesheet" href="styles.css" />
@@ -21,9 +35,15 @@
   <body class="bg-white min-h-screen flex">
     <!-- Sidebar -->
     <aside
-      class="w-64 bg-gradient-to-b from-orange-500 to-orange-600 text-white flex flex-col p-8 min-h-screen"
+      id="sidebar"
+      class="w-64 bg-gradient-to-b from-orange-500 to-orange-600 text-white flex flex-col p-8 min-h-screen transition-all duration-300"
     >
-      <h1 class="text-3xl font-bold mb-8">Nusa Rasa</h1>
+      <h1
+        id="sidebarLogo"
+        class="text-3xl font-bold mb-8 transition-all duration-300"
+      >
+        Nusa Rasa
+      </h1>
       <div class="mb-8">
         <div class="relative">
           <img
@@ -48,7 +68,7 @@
             alt="Beranda Icon"
             class="w-5 h-5"
           />
-          <span class="text-base">Home</span>
+          <span class="text-base sidebar-text">Home</span>
         </a>
         <a
           href="id/Jelajahi.html"
@@ -59,17 +79,18 @@
             alt="Jelajahi Icon"
             class="w-5 h-5"
           />
-          <span class="text-base">Jelajahi</span>
+          <span class="text-base sidebar-text">Jelajahi</span>
         </a>
         <a
           href="#"
           class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition"
         >
           <img src="asset/icons/Upload.svg" alt="Unggah Icon" class="w-5 h-5" />
-          <span class="text-base">Upload</span>
+          <span class="text-base sidebar-text">Upload</span>
         </a>
         <a
           href="#"
+          id="notifBtn"
           class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition"
         >
           <img
@@ -77,10 +98,10 @@
             alt="Notifikasi Icon"
             class="w-5 h-5"
           />
-          <span class="text-base">Notifikasi</span>
+          <span class="text-base sidebar-text">Notifikasi</span>
         </a>
         <a
-          href="#"
+          href="id/penanda.html"
           class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition"
         >
           <img
@@ -88,10 +109,10 @@
             alt="Penanda Icon"
             class="w-5 h-5"
           />
-          <span class="text-base">Penanda</span>
+          <span class="text-base sidebar-text">Penanda</span>
         </a>
         <a
-          href="#"
+          href="/id/pengaturan.html"
           class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition"
         >
           <img
@@ -99,10 +120,36 @@
             alt="Pengaturan Icon"
             class="w-5 h-5"
           />
-          <span class="text-base">Pengaturan</span>
+          <span class="text-base sidebar-text">Pengaturan</span>
         </a>
       </nav>
     </aside>
+
+    <!-- Notifikasi Panel -->
+    <div
+      id="notifPanel"
+      class="fixed top-0 left-0 h-full w-96 bg-orange-500 text-white shadow-lg z-50 transform -translate-x-full transition-all duration-300"
+    >
+      <div class="p-6">
+        <h2 class="text-xl font-bold mb-4">Notifikasi</h2>
+        <div class="mb-4">
+          <p class="mb-6">Silakan login untuk melihat notifikasi</p>
+          <a
+            href="id/login.html"
+            class="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition text-lg"
+          >
+            Login
+          </a>
+        </div>
+        <button
+          id="closeNotif"
+          class="absolute top-4 right-4 text-white text-2xl focus:outline-none"
+          title="Tutup"
+        >
+          &times;
+        </button>
+      </div>
+    </div>
 
     <!-- Main Content -->
     <main class="flex-1 bg-gray-50 p-8">
@@ -131,7 +178,7 @@
             <!-- Dropdown -->
             <div
               id="profileDropdown"
-              class="hidden absolute right-0 mt-2 w-48 bg-orange-500 text-white rounded-lg shadow-lg z-50"
+              class="hidden absolute right-0 mt-2 w-65 bg-orange-500 text-white rounded-lg shadow-lg z-50"
             >
               <div class="flex flex-col py-2">
                 <a
@@ -157,20 +204,15 @@
         <div class="bg-white rounded-xl shadow overflow-hidden">
           <div class="relative">
             <img
-              src="https://i.ytimg.com/vi/NfiaUcneRM4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB"
+              src="/asset/Makanan/makanan1.jpg"
               alt="Soto"
-              class="w-full h-48 object-cover"
+              class="w-full h-60 object-cover"
             />
-            <div
-              class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full"
-            >
-              ⭐ 4.5
+            <div class="absolute top-2 left-2 flex items-center gap-2 mt-2">
+              <img src="asset\tinashe.jpg" class="w-10 h-10 rounded-full" />
+              <span class="text-sm font-semibold text-white">Tinashe</span>
             </div>
-            <div
-              class="absolute top-2 right-2 bg-white text-black p-1 rounded-full"
-            >
-              📄
-            </div>
+            <div class="absolute top-2 right-2">📄</div>
             <div class="absolute inset-0 flex justify-center items-center">
               <div
                 class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center"
@@ -202,113 +244,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <div class="relative">
-            <img
-              src="asset\Makanan\makanan1.jpg"
-              alt="Bebek"
-              class="w-full h-48 object-cover"
-            />
-            <div
-              class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full"
-            >
-              ⭐ 4.5
-            </div>
-            <div
-              class="absolute top-2 right-2 bg-white text-black p-1 rounded-full"
-            >
-              📄
-            </div>
-            <div class="absolute inset-0 flex justify-center items-center">
-              <div
-                class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl"
-              >
-                ▶
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold">
-              Resep Bebek Goreng HJ. Slamet Anti Gagal
-            </h3>
-            <div class="flex items-center gap-2 mt-2">
-              <img src="asset\maskepin.jpg" class="w-6 h-6 rounded-full" />
-              <span class="text-sm">Mas Kepin</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <div class="relative">
-            <img
-              src="asset\Makanan\makanan1.jpg"
-              alt="Es Buah"
-              class="w-full h-48 object-cover"
-            />
-            <div
-              class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full"
-            >
-              ⭐ 4.5
-            </div>
-            <div
-              class="absolute top-2 right-2 bg-white text-black p-1 rounded-full"
-            >
-              📄
-            </div>
-            <div class="absolute inset-0 flex justify-center items-center">
-              <div
-                class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl"
-              >
-                ▶
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold">Cara memasak prabowo buatan rakyat</h3>
-            <div class="flex items-center gap-2 mt-2">
-              <img src="asset\kuncoro.jpg" class="w-6 h-6 rounded-full" />
-              <span class="text-sm">kuncoro</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <div class="relative">
-            <img
-              src="asset\Makanan\makanan1.jpg"
-              alt="Semur"
-              class="w-full h-48 object-cover"
-            />
-            <div
-              class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full"
-            >
-              ⭐ 4.5
-            </div>
-            <div
-              class="absolute top-2 right-2 bg-white text-black p-1 rounded-full"
-            >
-              📄
-            </div>
-            <div class="absolute inset-0 flex justify-center items-center">
-              <div
-                class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl"
-              >
-                ▶
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold">Cara memasak prabowo buatan rakyat</h3>
-            <div class="flex items-center gap-2 mt-2">
-              <img src="asset\kuncoro.jpg" class="w-6 h-6 rounded-full" />
-              <span class="text-sm">kuncoro</span>
-            </div>
-          </div>
-        </div>
         <!-- Dummy -->
       </div>
     </main>
@@ -320,6 +255,36 @@
           dropdown.classList.toggle("hidden");
         } else if (dropdown && !dropdown.contains(e.target)) {
           dropdown.classList.add("hidden");
+        }
+      });
+
+      // Notifikasi panel logic
+      const notifBtn = document.getElementById("notifBtn");
+      const notifPanel = document.getElementById("notifPanel");
+      const sidebar = document.getElementById("sidebar");
+      const closeNotif = document.getElementById("closeNotif");
+      const body = document.body;
+
+      notifBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        notifPanel.classList.remove("-translate-x-full");
+        notifPanel.classList.add("translate-x-0");
+        sidebar.classList.remove("w-64", "p-8");
+        sidebar.classList.add("w-20", "p-2", "sidebar-mini");
+        notifPanel.classList.add("left-20");
+      });
+
+      closeNotif.addEventListener("click", function () {
+        notifPanel.classList.add("-translate-x-full");
+        notifPanel.classList.remove("translate-x-0", "left-20");
+        sidebar.classList.add("w-64", "p-8");
+        sidebar.classList.remove("w-20", "p-2", "sidebar-mini");
+      });
+
+      // Tutup panel jika klik di luar panel
+      notifPanel.addEventListener("click", function (e) {
+        if (e.target === notifPanel) {
+          closeNotif.click();
         }
       });
     </script>

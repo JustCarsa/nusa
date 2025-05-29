@@ -80,7 +80,7 @@
           <span class="text-base">Notifikasi</span>
         </a>
         <a
-          href="#"
+          href="/id/penanda.html"
           class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition"
         >
           <img
@@ -88,10 +88,10 @@
             alt="Penanda Icon"
             class="w-5 h-5"
           />
-          <span class="text-base">Penanda</span>
+          <span class="text-base sidebar-text">Penanda</span>
         </a>
         <a
-          href="#"
+          href="/id/pengaturan.html"
           class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition"
         >
           <img
@@ -99,7 +99,7 @@
             alt="Pengaturan Icon"
             class="w-5 h-5"
           />
-          <span class="text-base">Pengaturan</span>
+          <span class="text-base sidebar-text">Pengaturan</span>
         </a>
       </nav>
     </aside>
@@ -149,6 +149,48 @@
           </div>
         </div>
       </div>
+      <!-- Tabs Provinsi Pills Centered & Responsive -->
+      <div class="w-full flex justify-center mb-8">
+        <div
+          id="tabsContainer"
+          class="flex gap-10 overflow-x-auto no-scrollbar select-none"
+          style="max-width: 900px"
+        >
+          <button
+            class="px-10 py-2 rounded-lg font-semibold bg-black text-white transition-all duration-200 focus:outline-none whitespace-nowrap"
+            style="min-width: 180px"
+          >
+            Jawa Barat
+          </button>
+          <button
+            class="px-10 py-2 rounded-lg font-semibold bg-transparent text-black transition-all duration-200 focus:outline-none whitespace-nowrap"
+            style="min-width: 180px"
+          >
+            Jawa Tengah
+          </button>
+          <button
+            class="px-10 py-2 rounded-lg font-semibold bg-transparent text-black transition-all duration-200 focus:outline-none whitespace-nowrap"
+            style="min-width: 180px"
+          >
+            DKI Jakarta
+          </button>
+          <button
+            class="px-10 py-2 rounded-lg font-semibold bg-transparent text-black transition-all duration-200 focus:outline-none whitespace-nowrap"
+            style="min-width: 180px"
+          >
+            Sumatera Barat
+          </button>
+        </div>
+      </div>
+      <style>
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      </style>
       <!-- Dummy -->
       <div class="grid grid-cols-2 gap-6">
         <!-- Card 1 -->
@@ -200,113 +242,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <div class="relative">
-            <img
-              src="/asset/Makanan/makanan1.jpg"
-              alt="Bebek"
-              class="w-full h-48 object-cover"
-            />
-            <div
-              class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full"
-            >
-              ⭐ 4.5
-            </div>
-            <div
-              class="absolute top-2 right-2 bg-white text-black p-1 rounded-full"
-            >
-              📄
-            </div>
-            <div class="absolute inset-0 flex justify-center items-center">
-              <div
-                class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl"
-              >
-                ▶
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold">
-              Resep Bebek Goreng HJ. Slamet Anti Gagal
-            </h3>
-            <div class="flex items-center gap-2 mt-2">
-              <img src="/asset/maskepin.jpg" class="w-6 h-6 rounded-full" />
-              <span class="text-sm">Mas Kepin</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <div class="relative">
-            <img
-              src="/asset/Makanan/makanan1.jpg"
-              alt="Es Buah"
-              class="w-full h-48 object-cover"
-            />
-            <div
-              class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full"
-            >
-              ⭐ 4.5
-            </div>
-            <div
-              class="absolute top-2 right-2 bg-white text-black p-1 rounded-full"
-            >
-              📄
-            </div>
-            <div class="absolute inset-0 flex justify-center items-center">
-              <div
-                class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl"
-              >
-                ▶
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold">Cara memasak prabowo buatan rakyat</h3>
-            <div class="flex items-center gap-2 mt-2">
-              <img src="/asset/kuncoro.jpg" class="w-6 h-6 rounded-full" />
-              <span class="text-sm">kuncoro</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="bg-white rounded-xl shadow overflow-hidden">
-          <div class="relative">
-            <img
-              src="/asset/Makanan/makanan1.jpg"
-              alt="Semur"
-              class="w-full h-48 object-cover"
-            />
-            <div
-              class="absolute top-2 left-2 bg-black text-white text-sm px-2 py-1 rounded-full"
-            >
-              ⭐ 4.5
-            </div>
-            <div
-              class="absolute top-2 right-2 bg-white text-black p-1 rounded-full"
-            >
-              📄
-            </div>
-            <div class="absolute inset-0 flex justify-center items-center">
-              <div
-                class="w-12 h-12 bg-black bg-opacity-40 rounded-full flex items-center justify-center text-white text-3xl"
-              >
-                ▶
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold">Cara memasak prabowo buatan rakyat</h3>
-            <div class="flex items-center gap-2 mt-2">
-              <img src="/asset/kuncoro.jpg" class="w-6 h-6 rounded-full" />
-              <span class="text-sm">kuncoro</span>
-            </div>
-          </div>
-        </div>
         <!-- Dummy -->
       </div>
     </main>
@@ -319,6 +254,50 @@
         } else if (dropdown && !dropdown.contains(e.target)) {
           dropdown.classList.add("hidden");
         }
+      });
+
+      // Tabs pill logic (aktifkan tab yang diklik)
+      document.querySelectorAll("#tabsContainer button").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          document.querySelectorAll("#tabsContainer button").forEach((b) => {
+            b.classList.remove("bg-black", "text-white");
+            b.classList.add("bg-transparent", "text-black");
+          });
+          this.classList.add("bg-black", "text-white");
+          this.classList.remove("bg-transparent", "text-black");
+          // TODO: Filter resep sesuai provinsi di sini
+        });
+      });
+
+      // Draggable Tabs Scroll (opsional, jika ingin drag-scroll di mobile)
+      const container = document.getElementById("tabsContainer");
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      container.addEventListener("mousedown", (e) => {
+        isDown = true;
+        container.classList.add("cursor-grabbing");
+        startX = e.pageX - container.offsetLeft;
+        scrollLeft = container.scrollLeft;
+      });
+
+      container.addEventListener("mouseleave", () => {
+        isDown = false;
+        container.classList.remove("cursor-grabbing");
+      });
+
+      container.addEventListener("mouseup", () => {
+        isDown = false;
+        container.classList.remove("cursor-grabbing");
+      });
+
+      container.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - container.offsetLeft;
+        const walk = (x - startX) * 2;
+        container.scrollLeft = scrollLeft - walk;
       });
     </script>
   </body>
